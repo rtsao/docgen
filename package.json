@@ -1,6 +1,25 @@
 {
   "name": "docgen",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
+  "description": "A modern documentation generator for JavaScript",
+  "author": "Ryan Tsao <ryan.j.tsao@gmail.com>",
   "main": "index.js",
+  "homepage": "https://github.com/rtsao/docgen",
+  "repository": "git@github.com:rtsao/docgen.git",
+  "bugs": "https://github.com/rtsao/docgen/issues",
+  "scripts": {
+    "flow": "flow; test $? -eq 0 -o $? -eq 2",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "babel-types": "^6.21.0",
+    "babylon": "^6.14.1",
+    "flow-bin": "^0.37.4"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.21.0",
+    "babel-register": "^6.18.0"
+  },
   "license": "MIT"
 }
